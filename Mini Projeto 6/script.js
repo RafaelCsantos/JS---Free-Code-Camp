@@ -1,10 +1,18 @@
-let a='vermelho';
-let b='azul';
-console.log(a);
-console.log(b);
+//criar um método pra ler propriedades de um objeto
+//exibir somente as propriedades dos strings
 
-let c=a;
-a=b;
+const filme = {
+    titulo : "juno",
+    ano: 2004,
+    diretor : "Jonze",
+    personagem: "Abc"
 
-console.log("var a" + a);
-console.log("var b" + c);
+}
+
+
+exibirPropriedades(filme);
+function exibirPropriedades(obj) {
+    for (i in obj)
+        if (typeof obj[i] === 'string')
+            console.log(i,obj[i])
+}

@@ -1,10 +1,14 @@
-let a='vermelho';
-let b='azul';
-console.log(a);
-console.log(b);
+// criar a função somar que retorna a
+// soma de todos os múltiplos de 3 e 5
 
-let c=a;
-a=b;
+let soma=0;
+ somar(10);
 
-console.log("var a" + a);
-console.log("var b" + c);
+
+ function somar (limite) { 
+    soma=0;
+    for (i=0; i<= limite; i++)
+     if (i%3===0 || i%5 ===0) 
+     soma=soma+i;
+}
+ console.log(soma);
