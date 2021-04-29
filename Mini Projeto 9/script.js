@@ -1,10 +1,21 @@
-let a='vermelho';
-let b='azul';
-console.log(a);
-console.log(b);
+// ciar função que exibe quantidade de *
+//que a linha possui
 
-let c=a;
-a=b;
+exibirAsteriscos(10);
 
-console.log("var a" + a);
-console.log("var b" + c);
+function exibirAsteriscos (linhas) {
+//     let padrao = '';
+//     for (let linha=1; linha <=linhas; linha++) {
+//         padrao += '*';
+//         console.log(padrao)
+// }
+
+for (let linha =1; linha <= linhas; linha++) {
+    let padrao ='';
+    for (let i=0; i<linha; i++) {
+        padrao += '*';
+
+    }
+    console.log(padrao);
+}
+}
