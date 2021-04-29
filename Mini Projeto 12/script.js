@@ -1,10 +1,25 @@
-let a='vermelho';
-let b='azul';
-console.log(a);
-console.log(b);
+function Endereco (rua,cidade,cep) {
+    this.rua = rua,
+    this.cidade = cidade,
+    this.cep  = cep
+}
 
-let c=a;
-a=b;
+const endereco1 = new Endereco ('a','b','c');
+const endereco2 = new Endereco ('a','b','c');
 
-console.log("var a" + a);
-console.log("var b" + c);
+function saoIguais(endereco1,endereco2) {
+
+    return endereco1.rua === endereco2.rua &&
+        endereco1.cidade === endereco2.cidade &&
+        endereco1.cep === endereco2.cep
+
+}
+
+console.log(saoIguais(endereco1,endereco2));
+
+
+
+function temEnderecoMemoriaIguais(endereco1,endereco2) {
+//comparando se a referencia aponte pro mesmo local
+
+}

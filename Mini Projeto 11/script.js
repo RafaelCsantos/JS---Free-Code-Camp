@@ -1,10 +1,25 @@
-let a='vermelho';
-let b='azul';
-console.log(a);
-console.log(b);
+// Objeto Endereço
+// criar um objeto enredeço:
+//rua
+//cidade
+//cep
+//exibirendereco(endereco)
 
-let c=a;
-a=b;
 
-console.log("var a" + a);
-console.log("var b" + c);
+let endereco = {
+    rua: 'a',
+    cidade: 'Pinda',
+    CEP: '12440440',
+}
+
+function exibirEndereco(endereco) {
+
+    for (let chave in endereco)
+    console.log(chave, endereco[chave]);
+}
+
+exibirEndereco(endereco);
+
+
+
+
