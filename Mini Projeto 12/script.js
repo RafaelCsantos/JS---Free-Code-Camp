@@ -19,7 +19,10 @@ console.log(saoIguais(endereco1,endereco2));
 
 
 
-function temEnderecoMemoriaIguais(endereco1,endereco2) {
+function temEnderecoMemoriaIguais(endereco1,endereco2) 
+{
+    return endereco1===endereco2;
 //comparando se a referencia aponte pro mesmo local
-
 }
+
+console.log(temEnderecoMemoriaIguais(endereco1,endereco2));
