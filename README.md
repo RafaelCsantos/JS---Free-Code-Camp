@@ -1,4 +1,4 @@
 # Js
 Estudos em JS
 
-Repositório para armazenar o progresso dos estudos em JavaScript puro.
+Repositório com todos os desafios da trilha de Javascript do https://www.freecodecamp.org
